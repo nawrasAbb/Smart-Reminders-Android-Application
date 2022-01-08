@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="415dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:background="#CCCCFF"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="415dp"
+        android:layout_height="303dp">
+
+
+        <EditText
+            android:id="@+id/Title"
+            android:layout_width="185dp"
+            android:layout_height="55dp"
+            android:autofillHints="Title"
+            android:backgroundTint="#FC000000"
+            android:ems="10"
+            android:foregroundTint="#005A1B1B"
+            android:gravity="center"
+            android:hint="Title"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:textColorHint="#AE9797"
+            android:textColorLink="#20DADA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="70dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:text="Add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.869" />
+
+
+        <ImageButton
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="96dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/addButton"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:visibility="invisible"
+            app:layout_constraintVertical_bias="0.869"
+            app:srcCompat="@drawable/ic_location" />
+
+        <ImageButton
+            android:id="@+id/selectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.869"
+            app:srcCompat="@drawable/ic_calender"
+            tools:layout_editor_absoluteX="101dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/addDiscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/selectDate"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.869"
+            app:srcCompat="@drawable/ic_text" />
+
+        <TextView
+            android:id="@+id/searchlocation"
+            android:layout_width="190dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.084"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+        <TextView
+            android:id="@+id/location_txt2"
+            android:layout_width="193dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_search"
+            android:gravity="center"
+            android:hint="Enter address"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/selectDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.085"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchlocation" />
+
+        <ImageButton
+            android:id="@+id/cancel_Btn"
+            android:layout_width="48dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_cancel" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="123dp"
+            android:layout_height="178dp"
+            android:ems="10"
+            android:gravity="center|center_horizontal|top|fill_vertical"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toEndOf="@+id/searchlocation"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="415dp"-->
+<!--    android:layout_height="300dp"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:background="#CCCCFF"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="3dp">-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="415dp"-->
+<!--        android:layout_height="303dp">-->
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/Title"-->
+<!--            android:layout_width="185dp"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:autofillHints="Title"-->
+<!--            android:backgroundTint="#FC000000"-->
+<!--            android:ems="10"-->
+<!--            android:foregroundTint="#005A1B1B"-->
+<!--            android:gravity="center"-->
+<!--            android:hint="Title"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textColorHint="#AE9797"-->
+<!--            android:textColorLink="#20DADA"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.106"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            tools:ignore="LabelFor" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/addButton"-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="43dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Add"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.918"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.869" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/location"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="96dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/addButton"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.869"-->
+<!--            app:srcCompat="@drawable/ic_location" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/select"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="24dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/location"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.869"-->
+<!--            app:srcCompat="@drawable/ic_calender" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/addDiscription"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/select"-->
+<!--            app:layout_constraintHorizontal_bias="0.52"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.869"-->
+<!--            app:srcCompat="@drawable/ic_text" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/searchlocation"-->
+<!--            android:layout_width="190dp"-->
+<!--            android:layout_height="47dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:visibility="invisible"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.084"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/Title" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/location_txt2"-->
+<!--            android:layout_width="193dp"-->
+<!--            android:layout_height="52dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableLeft="@drawable/ic_search"-->
+<!--            android:gravity="center"-->
+<!--            android:hint="Enter address"-->
+<!--            android:visibility="invisible"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/select"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.085"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/searchlocation" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/cancel_Btn"-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="47dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:backgroundTint="#00FFFFFF"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/ic_cancel" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/discription"-->
+<!--            android:layout_width="123dp"-->
+<!--            android:layout_height="178dp"-->
+<!--            android:ems="10"-->
+<!--            android:gravity="center|center_horizontal|top|fill_vertical"-->
+<!--            android:hint="Description"-->
+<!--            android:inputType="textMultiLine"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.053"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/searchlocation"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.104" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--</LinearLayout>-->

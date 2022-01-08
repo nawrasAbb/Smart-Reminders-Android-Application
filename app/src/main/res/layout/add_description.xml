@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="415dp"
+    android:layout_height="240dp"
+    android:layout_gravity="center"
+    android:background="#CCCCFF"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="415dp"
+        android:layout_height="240dp"
+        android:background="#2E2D2D">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/recordBtn2"
+            android:layout_width="55dp"
+            android:layout_height="57dp"
+            app:backgroundTint="#FDC53A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.562"
+            app:srcCompat="@drawable/ic_baseline_keyboard_voice_24"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <Chronometer
+            android:id="@+id/simpleChronometer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E8DFDF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/all_audios2"
+            app:layout_constraintHorizontal_bias="0.704"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761" />
+
+        <Button
+            android:id="@+id/cancel_desc_dialog"
+            android:layout_width="93dp"
+            android:layout_height="39dp"
+            android:backgroundTint="#FDC53A"
+            android:text="Cancel"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.627"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.929" />
+
+        <Button
+            android:id="@+id/save_description"
+            android:layout_width="94dp"
+            android:layout_height="38dp"
+            android:backgroundTint="#FDC53A"
+            android:enabled="false"
+            android:text="Save"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.933" />
+
+        <EditText
+            android:id="@+id/AddDescriptionEditText"
+            android:layout_width="316dp"
+            android:layout_height="88dp"
+            android:backgroundTint="#777171"
+            android:ems="10"
+            android:hint="Add Description"
+            android:inputType="textMultiLine"
+            android:textColor="#B69797"
+            android:textColorHint="#B69797"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.026" />
+
+        <ScrollView
+            android:id="@+id/all_audios2"
+            android:layout_width="256dp"
+            android:layout_height="75dp"
+            android:scrollbars="none"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.616"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.678">
+
+            <LinearLayout
+                android:id="@+id/kinear_all_audios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="415dp"-->
+<!--    android:layout_height="216dp"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:background="#CCCCFF"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="3dp">-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="415dp"-->
+<!--        android:layout_height="220dp"-->
+<!--        android:background="#2E2D2D">-->
+
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/audio"-->
+<!--            android:layout_width="59dp"-->
+<!--            android:layout_height="61dp"-->
+<!--            android:backgroundTint="#2E2D2D"-->
+<!--            android:tint="#E4DCC6"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.092"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.893"-->
+<!--            app:srcCompat="@drawable/ic_baseline_keyboard_voice_24" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/upload_image"-->
+<!--            android:layout_width="59dp"-->
+<!--            android:layout_height="61dp"-->
+<!--            android:backgroundTint="#2E2D2D"-->
+<!--            android:tint="#E4DCC6"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.255"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.899"-->
+<!--            app:srcCompat="@drawable/ic_baseline_image_24" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/cancel_desc_dialog"-->
+<!--            android:layout_width="93dp"-->
+<!--            android:layout_height="39dp"-->
+<!--            android:backgroundTint="#FDC53A"-->
+<!--            android:text="Cancel"-->
+<!--            android:textColor="#000000"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.627"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.911" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/save_description"-->
+<!--            android:layout_width="94dp"-->
+<!--            android:layout_height="38dp"-->
+<!--            android:backgroundTint="#FDC53A"-->
+<!--            android:enabled="false"-->
+<!--            android:text="Save"-->
+<!--            android:textColor="#000000"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.95"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.912" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/AddDescriptionEditText"-->
+<!--            android:layout_width="355dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:backgroundTint="#777171"-->
+<!--            android:ems="10"-->
+<!--            android:hint="Description"-->
+<!--            android:inputType="textMultiLine"-->
+<!--            android:textColor="#B69797"-->
+<!--            android:textColorHint="#B69797"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.533"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="92dp"-->
+<!--            android:saveEnabled="false"-->
+<!--            android:visibility="visible"-->
+<!--            android:scrollbars="none"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.4"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.335">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/gallery"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal" />-->
+<!--        </HorizontalScrollView>-->
+
+<!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/image_view"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="58dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="63dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:saveEnabled="false"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:visibility="invisible"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:srcCompat="@drawable/ic_info"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            tools:layout_editor_absoluteX="197dp" />&ndash;&gt;-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--</LinearLayout>-->
+
+

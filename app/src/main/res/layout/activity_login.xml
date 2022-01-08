@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/HomePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2D2D"
+    android:foregroundTint="#00000000"
+    tools:context=".login">
+
+
+    <Button
+        android:id="@+id/LogInButton"
+        android:layout_width="170dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#FDC53A"
+        android:onClick="log_in_button"
+        android:text="log in"
+        android:textColor="#040404"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.605"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/UserName_r"
+        android:layout_width="199dp"
+        android:layout_height="42dp"
+        android:autofillHints="UserName"
+        android:backgroundTint="#FC878686"
+        android:ems="10"
+        android:foregroundTint="#005A1B1B"
+        android:hint="User Name"
+        android:inputType="textEmailAddress"
+        android:textColor="#ECE8E8"
+        android:textColorHint="#E4E2E2"
+        android:textColorLink="#20DADA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="199dp"
+        android:layout_height="42dp"
+        android:autofillHints="UserName"
+        android:backgroundTint="#FC888585"
+        android:ems="10"
+        android:foregroundTint="#005A1B1B"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#EFEAEA"
+        android:textColorHint="#EFE8E8"
+        android:textColorLink="#20DADA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.493"
+        tools:ignore="LabelFor" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="453dp"
+        android:layout_height="168dp"
+        android:background="#2E2D2D"
+        android:backgroundTint="#2E2D2D"
+        android:src="@drawable/ac_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/RetrievePasswardButton"
+        android:layout_width="196dp"
+        android:layout_height="39dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#000000"
+        android:onClick="retrieve_password"
+        android:text="forget password?"
+        android:textColor="#E6E2E2"
+        app:iconTint="#090707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/registration_button"
+        android:layout_width="198dp"
+        android:layout_height="36dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#000000"
+        android:onClick="registration"
+        android:text="not a member yet?"
+        android:textColor="#F8F1F1"
+        app:iconTint="#090707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69"
+        tools:ignore="OnClick" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/ic_baseline_perm_identity_24"
+        android:tint="#D3CDCD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="42dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#00FFFFFF"
+        android:saveEnabled="false"
+        android:src="@drawable/ic_baseline_lock_24"
+        android:tint="#D6D3D3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="180dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/RetrievePasswardButton"
+        tools:text="." />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/HomePage"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="#00191919"-->
+<!--    android:foregroundTint="#00000000"-->
+<!--    tools:context=".login">-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/LogInButton"-->
+<!--        android:layout_width="170dp"-->
+<!--        android:layout_height="46dp"-->
+<!--        android:background="#5B32068A"-->
+<!--        android:onClick="log_in_button"-->
+<!--        android:text="log in"-->
+<!--        android:textColorLink="#00ACC1"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.489"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.605"-->
+<!--        app:rippleColor="#85745C9C"-->
+<!--        tools:ignore="OnClick" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/UserName_r"-->
+<!--        android:layout_width="199dp"-->
+<!--        android:layout_height="42dp"-->
+<!--        android:autofillHints="UserName"-->
+<!--        android:backgroundTint="#FC000000"-->
+<!--        android:ems="10"-->
+<!--        android:foregroundTint="#005A1B1B"-->
+<!--        android:hint="User Name"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textColorHint="#AE9797"-->
+<!--        android:textColorLink="#20DADA"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.566"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.399"-->
+<!--        tools:ignore="LabelFor" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/Password"-->
+<!--        android:layout_width="199dp"-->
+<!--        android:layout_height="42dp"-->
+<!--        android:autofillHints="UserName"-->
+<!--        android:backgroundTint="#FC000000"-->
+<!--        android:ems="10"-->
+<!--        android:foregroundTint="#005A1B1B"-->
+<!--        android:hint="Password"-->
+<!--        android:inputType="textPassword|textEmailAddress"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textColorHint="#AE9797"-->
+<!--        android:textColorLink="#20DADA"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.556"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.493"-->
+<!--        tools:ignore="LabelFor" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView6"-->
+<!--        android:layout_width="453dp"-->
+<!--        android:layout_height="168dp"-->
+<!--        android:src="@drawable/ac_logo"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.102"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/RetrievePasswardButton"-->
+<!--        android:layout_width="196dp"-->
+<!--        android:layout_height="39dp"-->
+<!--        android:background="#00FFFFFF"-->
+<!--        android:backgroundTint="#000000"-->
+<!--        android:onClick="retrieve_password"-->
+<!--        android:text="forget password?"-->
+<!--        android:textColor="#000000"-->
+<!--        app:iconTint="#090707"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.747"-->
+<!--        tools:ignore="OnClick" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/registration_button"-->
+<!--        android:layout_width="198dp"-->
+<!--        android:layout_height="36dp"-->
+<!--        android:background="#00FFFFFF"-->
+<!--        android:backgroundTint="#000000"-->
+<!--        android:onClick="registration"-->
+<!--        android:text="not a member yet?"-->
+<!--        android:textColor="#000000"-->
+<!--        app:iconTint="#090707"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.69"-->
+<!--        tools:ignore="OnClick" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="#00FFFFFF"-->
+<!--        android:src="@drawable/ic_baseline_perm_identity_24"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.198"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.399" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton2"-->
+<!--        android:layout_width="42dp"-->
+<!--        android:layout_height="52dp"-->
+<!--        android:backgroundTint="#00FFFFFF"-->
+<!--        android:src="@drawable/ic_baseline_lock_24"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/imageButton"-->
+<!--        app:layout_constraintHorizontal_bias="0.666"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/imageButton"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView3"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="#000000"-->
+<!--        android:text="TextView"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/RetrievePasswardButton"-->
+<!--        tools:text="." />-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

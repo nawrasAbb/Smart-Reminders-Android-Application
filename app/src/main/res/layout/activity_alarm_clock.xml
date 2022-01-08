@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2D2D"
+    tools:context=".alarm_clock"><![CDATA[
+    android:background="#23F8F5F5"
+    android:backgroundTint="#351C1C">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <CheckBox
+        android:id="@+id/Sunday_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:buttonTint="#FDC53A"
+        android:checked="false"
+        android:cursorVisible="false"
+        android:freezesText="false"
+        android:text="Sunday"
+        android:textColor="#E1DDDD"
+        android:textColorHighlight="#4043190D"
+        android:textColorHint="#2E0F0F"
+        android:textColorLink="#FFFAE3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <CheckBox
+        android:id="@+id/Friday_Check_Box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#FBC02D"
+        android:text="Friday"
+        android:textColor="#E1DDDD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+
+    <CheckBox
+        android:id="@+id/Saturday_Check_Box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#FBC02D"
+        android:text="Saturday"
+        android:textColor="#E1DDDD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.895" />
+
+    <CheckBox
+        android:id="@+id/Wednesday_Check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#FDC53A"
+        android:text="Wednesday"
+        android:textColor="#E1DDDD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <CheckBox
+        android:id="@+id/Tuesday_Check_Box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#FBC02D"
+        android:text="Tuesday"
+        android:textColor="#E1DDDD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+
+    <CheckBox
+        android:id="@+id/Thursday_Check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#FDC53A"
+        android:text="Thursday"
+        android:textColor="#E1DDDD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+
+    <TimePicker
+        android:id="@+id/alarmTimePicker"
+        android:layout_width="420dp"
+        android:layout_height="359dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:amPmBackgroundColor="#EF7070"
+        android:amPmTextColor="#C58E8E"
+        android:background="#2E2D2D"
+        android:backgroundTint="#2E2D2D"
+        android:headerBackground="#2E2D2D"
+        android:numbersBackgroundColor="#706C6C"
+        android:numbersSelectorColor="#FCACA7A7"
+        android:numbersTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/Monday_CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#FDC53A"
+        android:text="Monday"
+        android:textColor="#C5B8B8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <Button
+        android:id="@+id/cancel_alarm"
+        android:layout_width="192dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FDC53A"
+        android:text="Cancel"
+        android:textColor="#0E0E0E"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994"
+        app:rippleColor="#ECC35D" />
+
+    <Button
+        android:id="@+id/schedule_button"
+        android:layout_width="203dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#FDC53A"
+        android:text="Save"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.995"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996" />
+
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="355dp"
+        android:layout_height="45dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="date"
+        android:textColor="#E1DDDD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724" />
+
+    <EditText
+        android:id="@+id/alarm_name"
+        android:layout_width="376dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#E1DDDD"
+        android:ems="10"
+        android:hint="Alarm name"
+        android:inputType="textPersonName"
+        android:textColor="#E1DDDD"
+        android:textColorHint="#E1DDDD"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.643" />
+
+    <ImageView
+        android:id="@+id/calendar_button"
+        android:layout_width="33dp"
+        android:layout_height="39dp"
+        android:onClick="open_calendar"
+        android:tint="#E1DDDD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716"
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24"
+        tools:ignore="OnClick" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/Timer"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Button"-->
+    <!--        tools:ignore="MissingConstraints"-->
+    <!--        tools:layout_editor_absoluteX="35dp"-->
+    <!--        tools:layout_editor_absoluteY="493dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

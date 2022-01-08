@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "726203607306",
+    "firebase_url": "https://smartremindersapp2-default-rtdb.firebaseio.com",
+    "project_id": "smartremindersapp2",
+    "storage_bucket": "smartremindersapp2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726203607306:android:4749037a521be3e36bb2f3",
+        "android_client_info": {
+          "package_name": "com.example.smartremindersapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726203607306-f3b6ebr8u2espj7f4iibrhje8hhm4ch0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu95GEzhBUwSAayzQGn-emc2z2-PumrWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726203607306-f3b6ebr8u2espj7f4iibrhje8hhm4ch0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726203607306:android:4d88715242f68a516bb2f3",
+        "android_client_info": {
+          "package_name": "com.example.smartremindersapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726203607306-f3b6ebr8u2espj7f4iibrhje8hhm4ch0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu95GEzhBUwSAayzQGn-emc2z2-PumrWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726203607306-f3b6ebr8u2espj7f4iibrhje8hhm4ch0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

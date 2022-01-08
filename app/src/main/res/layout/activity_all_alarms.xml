@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout">
+<!--    tools:context=".Dashboard">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+<!--        <include layout="@layout/main_toolbar" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2E2D2D"
+            tools:context=".all_alarms">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="404dp"
+                android:layout_height="429dp"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_alignParentStart="false"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="45dp"
+                android:background="#2E2D2D"
+                android:padding="15dp"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="51dp"
+                android:layout_marginEnd="257dp"
+                android:layout_marginBottom="515dp"
+                android:text="My Alarms"
+                android:textColor="#D3D4DA"
+                android:textSize="28sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.059" />
+
+            <TextView
+                android:id="@+id/instructions_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/recycleView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginTop="208dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="178dp"
+                android:gravity="center"
+                android:text="@string/no_alarms_set_nclick_to_add_the_reminders"
+                android:textColor="#8C8383"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="82dp"
+                android:layout_height="59dp"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="8dp"
+                android:onClick="AddAlarm"
+                android:rotationY="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                app:srcCompat="@drawable/ic_baseline_add_alarm_24"
+                app:tint="#FDC53A"
+                tools:ignore="MissingConstraints,OnClick" />
+
+            <include
+                layout="@layout/main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include
+            layout="@layout/main_nav_drawer"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".Dashboard">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        <include
+            layout="@layout/main_toolbar"
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+            android:background="#2C2929"
+            android:backgroundTint="#575050" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="545dp"
+            android:background="#2E2D2D"
+
+            app:layout_constraintStart_toStartOf="parent"
+            tools:context=".all_alarms"
+            tools:layout_editor_absoluteY="-10dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView"
+                android:layout_width="match_parent"
+                android:layout_height="510dp"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="-1dp"
+                android:background="#2E2D2D"
+                android:padding="15dp"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="273dp"
+                android:layout_marginBottom="495dp"
+                android:text="My Alarms"
+                android:textColor="#D3D4DA"
+                android:textSize="28sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.059" />
+
+            <TextView
+                android:id="@+id/instructions_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/recycleView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="178dp"
+                android:gravity="center"
+                android:text="@string/no_alarms_set_nclick_to_add_the_reminders"
+                android:textColor="#8C8383"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="82dp"
+                android:layout_height="59dp"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="8dp"
+                android:onClick="AddAlarm"
+                android:rotationY="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                app:srcCompat="@drawable/ic_baseline_add_alarm_24"
+                app:tint="#FDC53A"
+                tools:ignore="MissingConstraints,OnClick" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include
+            layout="@layout/main_nav_drawer"
+            android:backgroundTint="#B88787" />
+
+
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout> -->

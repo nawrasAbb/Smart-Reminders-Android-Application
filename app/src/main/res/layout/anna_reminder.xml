@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background_layout"
+    android:layout_width="415dp"
+    android:layout_height="159dp"
+    android:layout_gravity="center"
+    android:background="#CCCCFF"
+    android:backgroundTint="#8C8080"
+    android:foregroundTint="#001F6523"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="415dp"
+        android:layout_height="159dp"
+        android:background="#2E2D2D">
+
+
+        <EditText
+            android:id="@+id/Title"
+            android:layout_width="289dp"
+            android:layout_height="51dp"
+            android:autofillHints="Title"
+            android:backgroundTint="#FC918686"
+            android:ems="10"
+            android:foregroundTint="#005A1B1B"
+            android:gravity="center"
+            android:hint="Title"
+            android:inputType="textEmailAddress"
+            android:textColor="#AE9E9E"
+            android:textColorHint="#AE9797"
+            android:textColorLink="#20DADA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.037"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="70dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#FDC53A"
+            android:text="Add"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.869" />
+
+
+        <ImageButton
+            android:id="@+id/location"
+            android:layout_width="53dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="168dp"
+            android:backgroundTint="#2E2D2D"
+            android:tint="#E4DCC6"
+
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.839"
+            app:srcCompat="@drawable/ic_location" />
+
+        <ImageButton
+            android:id="@+id/locationImage"
+            android:layout_width="53dp"
+            android:layout_height="47dp"
+            android:backgroundTint="#2E2D2D"
+
+            android:saveEnabled="false"
+            android:tint="#F44848"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.019"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.445"
+            app:srcCompat="@drawable/ic_location" />
+
+        <ImageButton
+            android:id="@+id/selectDate"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
+            android:backgroundTint="#2E2D2D"
+            android:tint="#E4DCC6"
+
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.152"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.844"
+            app:srcCompat="@drawable/ic_calender"
+            tools:ignore="MissingConstraints" />
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/searchlocation"-->
+        <!--        android:layout_width="190dp"-->
+        <!--        android:layout_height="47dp"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:layout_weight="1"-->
+        <!--        android:gravity="center"-->
+        <!--        android:visibility="invisible"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintHorizontal_bias="0.084"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/Title" />-->
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/location_txt2"-->
+        <!--        android:layout_width="193dp"-->
+        <!--        android:layout_height="52dp"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:layout_weight="1"-->
+        <!--        android:drawableLeft="@drawable/ic_search"-->
+        <!--        android:gravity="center"-->
+        <!--        android:hint="Enter address"-->
+        <!--        android:visibility="invisible"-->
+        <!--        app:layout_constraintBottom_toTopOf="@+id/selectDate"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintHorizontal_bias="0.085"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/searchlocation" />-->
+
+        <ImageButton
+            android:id="@+id/selectDateImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2E2D2D"
+            android:saveEnabled="false"
+
+            android:tint="#E4DCC6"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.019"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.445"
+            app:srcCompat="@drawable/ic_calender"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/addDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2E2D2D"
+            android:tint="#E4DCC6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.019"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.844"
+            app:srcCompat="@drawable/ic_text" />
+
+        <ImageButton
+            android:id="@+id/addDescriptionImage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2E2D2D"
+            android:saveEnabled="false"
+            android:tint="#FBC02D"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.019"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.445"
+            app:srcCompat="@drawable/ic_text" />
+
+        <ImageButton
+            android:id="@+id/cancel_Btn"
+            android:layout_width="48dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#00FFFFFF"
+            android:tint="#E4DCC6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_cancel" />
+
+        <TextView
+            android:id="@+id/DescriptionTextView"
+            android:layout_width="273dp"
+            android:layout_height="41dp"
+            android:editable="false"
+            android:textColor="#8F8B82"
+            android:textSize="16dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.435" />
+
+        <TextView
+            android:id="@+id/LocationTextView"
+            android:layout_width="278dp"
+            android:layout_height="43dp"
+            android:editable="false"
+            android:hint="write e-mail"
+            android:textColor="#8F8B82"
+            android:textColorHint="#A59E9E"
+            android:textSize="16dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.411"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.435" />
+
+        <TextView
+            android:id="@+id/TimeTextView"
+            android:layout_width="279dp"
+            android:layout_height="42dp"
+            android:editable="false"
+            android:textColor="#8F8B82"
+            android:textSize="16dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.415"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.414" />
+
+        <ImageButton
+            android:id="@+id/RemoveDate"
+            android:layout_width="49dp"
+            android:layout_height="39dp"
+            android:backgroundTint="#2E2D2D"
+            android:saveEnabled="false"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.445"
+            app:srcCompat="@drawable/ic_baseline_remove_24"
+            app:tint="#FD0303" />
+
+        <ImageButton
+            android:id="@+id/RemoveDescription"
+            android:layout_width="49dp"
+            android:layout_height="39dp"
+            android:backgroundTint="#2E2D2D"
+            android:saveEnabled="false"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.445"
+            app:srcCompat="@drawable/ic_baseline_remove_24"
+            app:tint="#FD0303" />
+
+        <ImageButton
+            android:id="@+id/RemoveLocation"
+            android:layout_width="49dp"
+            android:layout_height="39dp"
+            android:backgroundTint="#2E2D2D"
+            android:saveEnabled="false"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.445"
+            app:srcCompat="@drawable/ic_baseline_remove_24"
+            app:tint="#FD0303" />
+
+        <!--    <EditText-->
+        <!--        android:id="@+id/description"-->
+        <!--        android:layout_width="123dp"-->
+        <!--        android:layout_height="178dp"-->
+        <!--        android:ems="10"-->
+        <!--        android:gravity="center|center_horizontal|top|fill_vertical"-->
+        <!--        android:hint="Description"-->
+        <!--        android:inputType="textMultiLine"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintHorizontal_bias="0.053"-->
+        <!--        app:layout_constraintStart_toEndOf="@+id/searchlocation"-->
+        <!--        app:layout_constraintTop_toTopOf="parent"-->
+        <!--        app:layout_constraintVertical_bias="0.104" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
+
+
