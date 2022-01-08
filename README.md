@@ -1,5 +1,5 @@
 # Smart Reminders Application
-This project was my final project, and it was about android application development.
+This project was my final project, and it was about android application development, and we were 2 partners.
 We took care to write flexible and documented code, and to build application that it's very easy to use and understand.
 
 This is a video that explains and introduces the application:
