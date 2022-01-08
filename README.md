@@ -5,6 +5,15 @@ We took care to write flexible and documented code, and to build application tha
 This is a video that explains and introduces the application:
 https://drive.google.com/file/d/1Lbzkf1gmXA3kXOeWJaCGrDFxrPKmqhpA/view?usp=sharing
 
+# Tools:
+Programming Language: Java (IDE: Android Studio)
+Emulator: Nexus 5X API 28.
+Database: Firebase real-time database.
+We use Cloud Storage for recording audio.
+We use google Places API to get a place by category.
+We use google autocomplete feature to get a specific place.
+
+
 
 # Main idea:
 The application contains two main features:
@@ -14,13 +23,7 @@ The application contains two main features:
       - Reminders based time
       - Reminders based location
 
-# Tools:
-Programming Language: Java (IDE: Android Studio)
-Emulator: Nexus 5X API 28.
-Database: Firebase real-time database.
-We use Cloud Storage for recording audio.
-We use google Places API to get a place by category.
-We use google autocomplete feature to get a specific place.
+
 
 
 # Application Description:
